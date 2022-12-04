@@ -40,7 +40,6 @@
             <div class="col mt-5">
                 <div class="input-group">
                     <form action="{{ route('get_horoscopes') }}" method="GET" enctype="multipart/form-data">
-                        @csrf
                         <div class="d-flex">
                             <div><input type="date" name="date" class="form-control"></div>
                             <div class="ms-2"><button class="btn btn-secondary">Search</button></div>
