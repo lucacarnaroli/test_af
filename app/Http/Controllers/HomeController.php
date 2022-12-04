@@ -76,7 +76,7 @@ class HomeController extends Controller
     public function get_horoscopes(Request $request){
 
         $date = $request->input('date');
-        $query = Horoscopes::where('date', $date)->orderBy('date')->get();
+        $query = Horoscopes::where('date', $date)->get();
         
         return view('welcome', ['data' => $query]);
     }
